@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/icons/arrow-left-solid.svg</file>
+        <file>assets/icons/arrow-right-solid.svg</file>
+        <file>assets/icons/home-solid.svg</file>
+        <file>assets/icons/plus-solid.svg</file>
+        <file>assets/icons/share-solid.svg</file>
+        <file>assets/icons/sync-alt-solid.svg</file>
+        <file>assets/icons/benis.jpg</file>
+    </qresource>
+</RCC>
