@@ -22,7 +22,9 @@ void MainWindow::on_abasBrowser_tabCloseRequested(int index)
 
 void MainWindow::on_addTab_clicked()
 {
-    ui->abasBrowser->addTab(new Navegador(nullptr,ui->abasBrowser, tabIndex++,  ui->statusbar), "Nova Aba");
+    ui->abasBrowser->addTab(new Navegador(nullptr,ui->abasBrowser, tabIndex,  ui->statusbar), "Nova Aba");
+    ui->abasBrowser->setCurrentIndex(tabIndex);
+    tabIndex++;
 }
 
 MainWindow::~MainWindow()

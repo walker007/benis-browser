@@ -1,8 +1,6 @@
 #include "navegador.h"
 #include "ui_navegador.h"
 #include <regex>
-#include <iostream>
-#include <QProgressBar>
 
 Navegador::Navegador(QWidget *parent, QTabWidget *tab, int index, QStatusBar *status): QWidget(parent),
     ui(new Ui::Navegador)
@@ -23,7 +21,7 @@ Navegador::~Navegador()
 void Navegador::on_toolButton_clicked()
 {
     QString url = "https://duckduckgo.com";
-    ui->webView->load(url);
+    ui->webView->load(QUrl(QString(url)));
 }
 
 bool isValidUrl(QString url)
@@ -96,7 +94,6 @@ void Navegador::on_webView_statusBarMessage(const QString &text)
 {
     statusBar->showMessage(text);
 }
-
 
 void Navegador::on_webView_loadFinished(bool arg1)
 {
